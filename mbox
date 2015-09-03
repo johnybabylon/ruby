@@ -1,0 +1,325 @@
+From elliottchavis@elliotts-mbp.att.net  Thu Jun 25 13:10:05 2015
+Return-Path: <elliottchavis@elliotts-mbp.att.net>
+X-Original-To: elliottchavis
+Delivered-To: elliottchavis@elliotts-mbp.att.net
+Received: by elliotts-mbp.att.net (Postfix, from userid 501)
+	id C9D7B19955E4; Thu, 25 Jun 2015 13:10:05 -0700 (PDT)
+From: elliottchavis@elliotts-mbp.att.net (Cron Daemon)
+To: elliottchavis@elliotts-mbp.att.net
+Subject: Cron <elliottchavis@elliotts-mbp> /bin/bash -l -c 'cd /Users/elliottchavis/RubymineProjects/textsms && RAILS_ENV=production bundle exec rake webscrape:mlb --silent'
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=elliottchavis>
+X-Cron-Env: <USER=elliottchavis>
+X-Cron-Env: <HOME=/Users/elliottchavis>
+Message-Id: <20150625201005.C9D7B19955E4@elliotts-mbp.att.net>
+Date: Thu, 25 Jun 2015 13:10:05 -0700 (PDT)
+Status: RO
+
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+PG::ConnectionBad: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+Tasks: TOP => webscrape:mlb
+(See full trace by running task with --trace)
+
+From elliottchavis@elliotts-mbp.att.net  Thu Jun 25 13:24:04 2015
+Return-Path: <elliottchavis@elliotts-mbp.att.net>
+X-Original-To: elliottchavis
+Delivered-To: elliottchavis@elliotts-mbp.att.net
+Received: by elliotts-mbp.att.net (Postfix, from userid 501)
+	id B88AC1996368; Thu, 25 Jun 2015 13:24:04 -0700 (PDT)
+From: elliottchavis@elliotts-mbp.att.net (Cron Daemon)
+To: elliottchavis@elliotts-mbp.att.net
+Subject: Cron <elliottchavis@elliotts-mbp> /bin/bash -l -c 'cd /Users/elliottchavis/RubymineProjects/textsms && RAILS_ENV=production bundle exec rake webscrape:mlb --silent'
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=elliottchavis>
+X-Cron-Env: <USER=elliottchavis>
+X-Cron-Env: <HOME=/Users/elliottchavis>
+Message-Id: <20150625202404.B88AC1996368@elliotts-mbp.att.net>
+Date: Thu, 25 Jun 2015 13:24:04 -0700 (PDT)
+Status: RO
+
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+PG::ConnectionBad: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+Tasks: TOP => webscrape:mlb
+(See full trace by running task with --trace)
+
+From elliottchavis@elliotts-mbp.att.net  Thu Jun 25 13:26:03 2015
+Return-Path: <elliottchavis@elliotts-mbp.att.net>
+X-Original-To: elliottchavis
+Delivered-To: elliottchavis@elliotts-mbp.att.net
+Received: by elliotts-mbp.att.net (Postfix, from userid 501)
+	id 980AF1996743; Thu, 25 Jun 2015 13:26:03 -0700 (PDT)
+From: elliottchavis@elliotts-mbp.att.net (Cron Daemon)
+To: elliottchavis@elliotts-mbp.att.net
+Subject: Cron <elliottchavis@elliotts-mbp> /bin/bash -l -c 'cd /Users/elliottchavis/RubymineProjects/textsms && RAILS_ENV=production bundle exec rake webscrape:mlb --silent'
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=elliottchavis>
+X-Cron-Env: <USER=elliottchavis>
+X-Cron-Env: <HOME=/Users/elliottchavis>
+Message-Id: <20150625202603.980AF1996743@elliotts-mbp.att.net>
+Date: Thu, 25 Jun 2015 13:26:03 -0700 (PDT)
+Status: RO
+
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+PG::ConnectionBad: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+Tasks: TOP => webscrape:mlb
+(See full trace by running task with --trace)
+
+From elliottchavis@elliotts-mbp.att.net  Thu Jun 25 13:28:11 2015
+Return-Path: <elliottchavis@elliotts-mbp.att.net>
+X-Original-To: elliottchavis
+Delivered-To: elliottchavis@elliotts-mbp.att.net
+Received: by elliotts-mbp.att.net (Postfix, from userid 501)
+	id E136D199692D; Thu, 25 Jun 2015 13:28:11 -0700 (PDT)
+From: elliottchavis@elliotts-mbp.att.net (Cron Daemon)
+To: elliottchavis@elliotts-mbp.att.net
+Subject: Cron <elliottchavis@elliotts-mbp> /bin/bash -l -c 'cd /Users/elliottchavis/RubymineProjects/textsms && RAILS_ENV=production bundle exec rake webscrape:mlb --silent'
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=elliottchavis>
+X-Cron-Env: <USER=elliottchavis>
+X-Cron-Env: <HOME=/Users/elliottchavis>
+Message-Id: <20150625202811.E136D199692D@elliotts-mbp.att.net>
+Date: Thu, 25 Jun 2015 13:28:11 -0700 (PDT)
+Status: RO
+
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+PG::ConnectionBad: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+Tasks: TOP => webscrape:mlb
+(See full trace by running task with --trace)
+
+From elliottchavis@elliotts-mbp.att.net  Thu Jun 25 13:34:03 2015
+Return-Path: <elliottchavis@elliotts-mbp.att.net>
+X-Original-To: elliottchavis
+Delivered-To: elliottchavis@elliotts-mbp.att.net
+Received: by elliotts-mbp.att.net (Postfix, from userid 501)
+	id 29B7C1996E28; Thu, 25 Jun 2015 13:34:03 -0700 (PDT)
+From: elliottchavis@elliotts-mbp.att.net (Cron Daemon)
+To: elliottchavis@elliotts-mbp.att.net
+Subject: Cron <elliottchavis@elliotts-mbp> /bin/bash -l -c 'cd /Users/elliottchavis/RubymineProjects/textsms && RAILS_ENV=production bundle exec rake webscrape:mlb --silent'
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=elliottchavis>
+X-Cron-Env: <USER=elliottchavis>
+X-Cron-Env: <HOME=/Users/elliottchavis>
+Message-Id: <20150625203403.29B7C1996E28@elliotts-mbp.att.net>
+Date: Thu, 25 Jun 2015 13:34:02 -0700 (PDT)
+Status: RO
+
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+PG::ConnectionBad: FATAL:  role "textsms" does not exist
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/connection_handling.rb:87:in `connection'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:91:in `columns'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/attributes.rb:96:in `columns_hash'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:205:in `subclass_from_attributes?'
+/Users/elliottchavis/.rvm/gems/ruby-2.1.2/gems/activerecord-4.2.0.rc2/lib/active_record/inheritance.rb:54:in `new'
+/Users/elliottchavis/RubymineProjects/textsms/lib/tasks/webscrape/mlb.rake:50:in `block (2 levels) in <top (required)>'
+Tasks: TOP => webscrape:mlb
+(See full trace by running task with --trace)
+
